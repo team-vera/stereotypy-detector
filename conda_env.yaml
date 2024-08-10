@@ -1,0 +1,3 @@
+name: stereotypy-detector
+dependencies:
+  - python=3.9

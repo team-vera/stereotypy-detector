@@ -1,0 +1,17 @@
+env
+env_*
+.vscode
+__pycache__
+*.pyc
+*.weights
+*.cfg
+detection/weights/darknet53.conv.74
+*.data
+training
+.ipynb_checkpoints
+detection/config/*.yaml
+scripts
+/data
+*.npy
+models/*.pt
+models/*.pkl
