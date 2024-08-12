@@ -1,5 +1,7 @@
 # Polar Bear Analysis Pipeline
 
+![](/Users/eq64opiv/Documents/01_repos/stereotypy-detector/images/Demo_Stereo.gif)
+
 ## Setup
 
 1. Pull `yolov5` Repo with `git submodule update --init`
