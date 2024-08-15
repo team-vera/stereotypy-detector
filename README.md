@@ -1,5 +1,24 @@
 # Polar Bear Analysis Pipeline
 
+In this repository we provide the code for our automated stereotypy detection framework.
+The corresponding publication is currently under review, but you can find a preprint here: https://dx.doi.org/10.2139/ssrn.4866579.
+All necessary models, as well as two demo videos can be downloaded here: https://drive.google.com/drive/folders/1O1wHMxC2E6LGo2rUevRpvsvhi-K36FzF?usp=drive_link.
+A demo video explaining our pipeline can be found here: https://youtu.be/HMebXKtyFKI
+You can visit our website for further information: https://team-vera.github.io/
+Ultimately, we are part of the Machine Learning and Data Analytics Lab: https://www.mad.tf.fau.de
+
+Abstract:
+
+_The welfare of animals under human care is often assessed by observing behaviours indicative of stress or discomfort, such as stereotypical behaviour (SB), which often shows as repetitive, invariant pacing.
+Traditional behaviour monitoring methods, however, are labour-intensive and subject to observer bias.
+Our study presents an innovative automated approach utilising computer vision and machine learning to non-invasively detect and analyse SB in managed populations, exemplified by a longitudinal study of two polar bears.
+We designed an animal tracking framework to localise and identify individual animals in the enclosure.
+After determining their position on the enclosure map via homographic transformation, we refined the resulting trajectories using a particle filter.
+Finally, we classified the trajectory patterns as SB or normal behaviour using a lightweight random forest approach with an accuracy of 94.9~\%.
+The system not only allows for continuous, objective monitoring of animal behaviours but also provides insights into seasonal variations in SB, illustrating its potential for improving animal welfare in zoological settings.
+Ultimately, we analysed 607 days for the occurrence of SB, allowing us to discuss seasonal patterns of SB in both the male and female polar bear.
+This work advances the field of animal welfare research by introducing a scalable, efficient method for the long-term, automated detection and monitoring of stereotypical behaviour, paving the way for its application across various settings and species that can be continuously monitored with cameras._
+
 ![](/Users/eq64opiv/Documents/01_repos/stereotypy-detector/images/Demo_Stereo.gif)
 
 ## Setup
@@ -21,6 +40,7 @@
 - What is needed:
   - Trained detector (`models/yolov5m_oc.pt`)
   - Trained identification network (`models/ident.pt`)
+  - Download both models here: https://drive.google.com/drive/folders/1O1wHMxC2E6LGo2rUevRpvsvhi-K36FzF?usp=drive_link
   - Homography mapping for enclosure (`tools/mapping/`)
 - Script:
   - `analyze.py`
@@ -57,7 +77,7 @@ python3 process_trajectory.py --traj /tmp/test/traj_raw_*.json --format raw --ex
 - Scripts:
   - `trajectories/annotate_behaviour.py`
 - Output:
-  - Trajectory with predicted behaviour as a .csv file
+  - Trajectory with added predicted behaviour in the .csv file
 
 Example:
 
