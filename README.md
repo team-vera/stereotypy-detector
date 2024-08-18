@@ -86,6 +86,21 @@ cd trajectories
 python3 annotate_behaviour.py --traj /tmp/test/traj_filtered.csv --out /tmp/test/ --clf ../models/behaviour_classifier.pkl --stereo-only
 ```
 
+
+### 5 Visualisation (optional)
+
+- Scripts:
+  - `trajectories/plot_trajectory.py`
+- Output:
+  - Trajectory plots (Enclosure Plot, Observational Plot, Particle-Filtered Plot, ...)
+
+Example:
+
+```bash
+cd trajectories
+python3 plot_trajectory.py --traj /tmp/test/traj_raw_*.json --overlay ../images/PB_Maps_Overlay.png --out /tmp/test/
+```
+
 ## Output Format
 
 ### 2D Enclosure Positions
