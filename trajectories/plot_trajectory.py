@@ -67,7 +67,7 @@ def main():
                         help="Path to cont observation ground truth directory")
     parser.add_argument("--plot-behaviour",
                         action="store_true",
-                        help="Set, if behaviour ground truth read from exclusive annotation should be plottet")
+                        help="Set, if behaviour ground truth read from exclusive annotation should be plotted")
     parser.add_argument("--pf",
                         action="store_true",
                         help="Plot features over time at the end")
