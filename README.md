@@ -1,7 +1,7 @@
 # Polar Bear Analysis Pipeline
 
 In this repository we provide the code for our automated stereotypy detection framework.
-The corresponding publication is published in the peer-reviewed Jounral _Ecological Informatics_: https://doi.org/10.1016/j.ecoinf.2024.102840. Please refer to this publication when using the code.
+The corresponding publication is published in the peer-reviewed Journal _Ecological Informatics_: https://doi.org/10.1016/j.ecoinf.2024.102840. Please refer to this publication when using the code.
 All necessary models, as well as two demo videos can be downloaded here: https://drive.google.com/drive/folders/1O1wHMxC2E6LGo2rUevRpvsvhi-K36FzF?usp=drive_link.
 A demo video explaining our pipeline can be found here: https://youtu.be/HMebXKtyFKI
 You can visit our website for further information: https://team-vera.github.io/
